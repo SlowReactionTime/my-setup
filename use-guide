@@ -1,0 +1,21 @@
+1. GNOME Terminal
+2. Vim
+3. Plugins for specific languages
+
+1. GNOME Terminal:
+(Tab creation/deletion)
+Ctrl+alt+n 'new tab'
+ctrl+alt+k 'kill tab'
+
+(Navigation)
+ctrl+h 'move to the tab to the left'
+ctrl+l 'move to the tab to the right'
+ctrl+/ 'search'
+ctrl+n 'next'
+
+2. Vim
+fj 'auto indent the entire file'
+ctrl+(hjkl) to 'switch around the Vims inside a same terminal'
+
+3. Plugins for specific languages
+Typescript: https://github.com/leafgarland/typescript-vim
