@@ -91,7 +91,7 @@ set tabstop=8 softtabstop=0 expandtab shiftwidth=2 smarttab
 " newlines stat at last indent
 set autoindent
 
-" bind fj to inent whole file (mark p, gg, =G, go back to the mark p)
+" bind fj to indent whole file (mark p, gg, =G, go back to the mark p)
 nnoremap fj :normal mpgg=G`p<cr> 
 
 " map key combination for changing windows within same terminal
