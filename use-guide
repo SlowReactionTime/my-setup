@@ -4,8 +4,10 @@
 
 1. GNOME Terminal:
 
-(Change default terminal at)
+(Change default terminal to GNOME)
+gsettings set org.gnome.desktop.default-applications.terminal exec 'x-terminal-emulator'
 sudo update-alternatives --config x-terminal-emulator
+'then select GNOME as default'
 
 (Tab creation/deletion)
 Ctrl+n 'new tab'
