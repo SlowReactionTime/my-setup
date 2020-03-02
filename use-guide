@@ -14,12 +14,12 @@ Ctrl+Alt+n 'new tab'
 Ctrl+Alt+k 'kill tab'
 
 (Navigation)
-Shift+Alt+j 'move to previous tab'
-Shift+Alt+k 'move to next tab'
-Shift+Alt+h 'move tab to the left'
-Shift+Alt+l 'move tab to the right'
-Shift+Alt+/ 'search'
-Shift+Alt+n 'find next'
+Alt+j 'move to previous tab'
+Alt+k 'move to next tab'
+Alt+h 'move tab to the left'
+Alt+l 'move tab to the right'
+Alt+/ 'search'
+Alt+n 'find next'
 
 2. Vim Bindings:
 
