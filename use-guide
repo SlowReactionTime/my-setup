@@ -11,15 +11,15 @@ sudo update-alternatives --config x-terminal-emulator
 
 (Tab creation/deletion)
 Ctrl+n 'new tab'
-ctrl+k 'kill tab'
+Ctrl+k 'kill tab'
 
 (Navigation)
-shift+j 'move to previous tab'
-shift+k 'move to next tab'
-shift+h 'move tab to the left'
-shift+l 'move tab to teh right'
-shift+/ 'search'
-shift+n 'find next'
+Ctrl+j 'move to previous tab'
+Ctrl+k 'move to next tab'
+Ctrl+h 'move tab to the left'
+Ctrl+l 'move tab to the right'
+Ctrl+/ 'search'
+Ctrl+n 'find next'
 
 2. Vim Bindings:
 
