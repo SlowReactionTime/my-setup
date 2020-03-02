@@ -10,16 +10,16 @@ sudo update-alternatives --config x-terminal-emulator
 'then select GNOME as default'
 
 (Tab creation/deletion)
-Ctrl+alt+n 'new tab'
-Ctrl+alt+k 'kill tab'
+Ctrl+Alt+n 'new tab'
+Ctrl+Alt+k 'kill tab'
 
 (Navigation)
-Ctrl+j 'move to previous tab'
-Ctrl+k 'move to next tab'
-Ctrl+h 'move tab to the left'
-Ctrl+l 'move tab to the right'
-Ctrl+/ 'search'
-Ctrl+n 'find next'
+Shift+Alt+j 'move to previous tab'
+Shift+Alt+k 'move to next tab'
+Shift+Alt+h 'move tab to the left'
+Shift+Alt+l 'move tab to the right'
+Shift+Alt+/ 'search'
+Shift+Alt+n 'find next'
 
 2. Vim Bindings:
 
