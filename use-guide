@@ -10,8 +10,8 @@ sudo update-alternatives --config x-terminal-emulator
 'then select GNOME as default'
 
 (Tab creation/deletion)
-Ctrl+n 'new tab'
-Ctrl+k 'kill tab'
+Ctrl+alt+n 'new tab'
+Ctrl+alt+k 'kill tab'
 
 (Navigation)
 Ctrl+j 'move to previous tab'
