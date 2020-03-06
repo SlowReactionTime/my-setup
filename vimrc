@@ -100,3 +100,8 @@ nnoremap <C-j> <C-w>j
 nnoremap <C-k> <C-w>k
 nnoremap <C-l> <C-w>l
 
+" copy/cut/paste to file. useful when global buffer not available over ssh
+noremap <S-Y> :'<,'> w! /tmp/vimcopy<CR>
+noremap <S-D> :'<,'> w! /tmp/vimcopy <bar> :'<,'> d<CR>
+noremap <S-P> :r /tmp/vimcopy<CR>
+
