@@ -31,5 +31,8 @@ ctrl+(hjkl) to 'switch around the Vims inside a same terminal'
 
 3. Vim Plugins:
 
-(Languages)
+(Language)
 Typescript: https://github.com/leafgarland/typescript-vim
+
+(Tool)
+YouCompleteMe: https://github.com/ycm-core/YouCompleteMe
