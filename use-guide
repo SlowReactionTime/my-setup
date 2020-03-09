@@ -25,6 +25,7 @@ Alt+n 'find next'
 
 (Tool)
 fj 'auto indent the entire file'
+Ctrl+n 'toggle NERDtree'
 
 (Navigation)
 ctrl+(hjkl) to 'switch around the Vims inside a same terminal'
@@ -36,3 +37,6 @@ Typescript: https://github.com/leafgarland/typescript-vim
 
 (Tool)
 YouCompleteMe: https://github.com/ycm-core/YouCompleteMe
+
+(Navigation)
+NERDTree: https://github.com/preservim/nerdtree

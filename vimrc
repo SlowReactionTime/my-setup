@@ -84,7 +84,11 @@ Plugin 'rstacruz/sparkup', {'rtp': 'vim/'}
 " different version somewhere else.
 " Plugin 'ascenator/L9', {'name': 'newL9'}
 
+" auto-completion
 Plugin 'ycm-core/YouCompleteMe'
+
+" navigation tree
+Plugin 'preservim/nerdtree'
 
 " All of your Plugins must be added before the following line
 call vundle#end()            " required
@@ -150,4 +154,11 @@ nnoremap <C-l> <C-w>l
 noremap <S-Y> :'<,'> w! /tmp/vimcopy<CR>
 noremap <S-D> :'<,'> w! /tmp/vimcopy <bar> :'<,'> d<CR>
 noremap <S-P> :r /tmp/vimcopy<CR>
+
+" toggle NERDtree
+map <S-n> :NERDTreeToggle<CR>
+
+" open a NERDtree when vim starts up with no file specified
+autocmd StdinReadPre * let s:std_in=1
+autocmd VimEnter * if argc() == 0 && !exists("s:std_in") | NERDTree | endif
 
