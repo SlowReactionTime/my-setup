@@ -1,3 +1,4 @@
+"==========Default Vim Texts==========
 " All system-wide defaults are set in $VIMRUNTIME/debian.vim and sourced by
 " the call to :runtime you can find below.  If you wish to change any of those
 " settings, you should do it in this file (/etc/vim/vimrc), since debian.vim
@@ -58,6 +59,8 @@ endif
 set nocompatible              " be iMproved, required
 filetype off                  " required
 
+
+"==========VundleVim==========
 " set the runtime path to include Vundle and initialize
 set rtp+=~/.vim/bundle/Vundle.vim
 call vundle#begin()
@@ -66,23 +69,6 @@ call vundle#begin()
 
 " let Vundle manage Vundle, required
 Plugin 'VundleVim/Vundle.vim'
-
-" The following are examples of different formats supported.
-" Keep Plugin commands between vundle#begin/end.
-" plugin on GitHub repo
-Plugin 'tpope/vim-fugitive'
-" plugin from http://vim-scripts.org/vim/scripts.html
-" Plugin 'L9'
-" Git plugin not hosted on GitHub
-Plugin 'git://git.wincent.com/command-t.git'
-" git repos on your local machine (i.e. when working on your own plugin)
-Plugin 'file:///home/gmarik/path/to/plugin'
-" The sparkup vim script is in a subdirectory of this repo called vim.
-" Pass the path to set the runtimepath properly.
-Plugin 'rstacruz/sparkup', {'rtp': 'vim/'}
-" Install L9 and avoid a Naming conflict if you've already installed a
-" different version somewhere else.
-" Plugin 'ascenator/L9', {'name': 'newL9'}
 
 " auto-completion
 Plugin 'ycm-core/YouCompleteMe'
@@ -105,32 +91,21 @@ filetype plugin indent on    " required
 " see :h vundle for more details or wiki for FAQ
 " Put your non-Plugin stuff after this line
 
+"==========NERDTree==========
+" open a NERDtree when vim starts up with no file specified
+autocmd StdinReadPre * let s:std_in=1
+autocmd VimEnter * if argc() == 0 && !exists("s:std_in") | NERDTree | endif
+
+
+"==========Pure Vim Configuration==========
 " Show line numbers
 set number
-
-" Remap kj to escape from insert mode
-inoremap kj <esc>
 
 " show filename in bottom left
 set statusline+=%F
 
 " show line number, column, page% in bottom right
 set ruler
-
-"set syntax"
-"set syntax=typescript
-
-"set filetype to typescript whenever file extension '*.ts' is opened
-autocmd BufNewFile,BufRead *.ts setlocal filetype=typescript
-
-"auto complete matching pair 
-"inoremap { {<CR>}<Esc>ko
-inoremap { {}
-inoremap ( ()
-inoremap [ []
-
-" turn on search highlight and turn off when you are no longer searching
-nnoremap <esc><esc> :silent! nohls<cr>
 
 " constantly show file name and path
 set laststatus=2
@@ -141,10 +116,20 @@ set tabstop=8 softtabstop=0 expandtab shiftwidth=2 smarttab
 " newlines stat at last indent
 set autoindent
 
-" bind fj to indent whole file (mark p, gg, =G, go back to the mark p)
-nnoremap fj :normal mpgg=G`p<cr> 
+" turn on search highlight and turn off when you are no longer searching
+nnoremap <esc><esc> :silent! nohls<cr>
 
-" map key combination for changing windows within same terminal
+"set filetype to typescript whenever file extension '*.ts' is opened
+autocmd BufNewFile,BufRead *.ts setlocal filetype=typescript
+
+"auto complete matching pair 
+"inoremap { {<CR>}<Esc>ko
+inoremap { {}
+inoremap ( ()
+inoremap [ []
+
+"==========All Key Bindings==========
+" map key combination for changing Vim windows 
 nnoremap <C-h> <C-w>h
 nnoremap <C-j> <C-w>j
 nnoremap <C-k> <C-w>k
@@ -155,10 +140,15 @@ noremap <S-Y> :'<,'> w! /tmp/vimcopy<CR>
 noremap <S-D> :'<,'> w! /tmp/vimcopy <bar> :'<,'> d<CR>
 noremap <S-P> :r /tmp/vimcopy<CR>
 
-" toggle NERDtree
-map <S-n> :NERDTreeToggle<CR>
+" Remap kj to escape from insert mode
+inoremap kj <esc>
 
-" open a NERDtree when vim starts up with no file specified
-autocmd StdinReadPre * let s:std_in=1
-autocmd VimEnter * if argc() == 0 && !exists("s:std_in") | NERDTree | endif
+" bind fj to indent whole file (mark p, gg, =G, go back to the mark p)
+nnoremap fj :normal mpgg=G`p<cr> 
+
+" close all Vim windows except current 
+map <S-k> :only<CR>
+
+" toggle NERDtree [NERDTree]
+map <S-n> :NERDTreeToggle<CR>
 

@@ -21,14 +21,22 @@ Alt+l 'move tab to the right'
 Alt+/ 'search'
 Alt+n 'find next'
 
+(Color Theme)
+Palette: Built-in Scheme: Tango
+Default Background Color: #1D001E
+
 2. Vim Bindings:
 
 (Tool)
 fj 'auto indent the entire file'
-Ctrl+n 'toggle NERDtree'
+Shift+n 'toggle NERDtree'
+Shift+y 'copy into a temp. file'
+Shift+p 'paste out of a temp. file'
 
 (Navigation)
-ctrl+(hjkl) to 'switch around the Vims inside a same terminal'
+kj '<Esc>'
+Ctrl+(hjkl) to 'Vim windows navigation'
+Shift+k 'close all Vim windows except current one'
 
 3. Vim Plugins:
 
