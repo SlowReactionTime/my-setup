@@ -119,6 +119,10 @@ set autoindent
 " turn on search highlight and turn off when you are no longer searching
 nnoremap <esc><esc> :silent! nohls<cr>
 
+" Search down into subfoldes
+set path+=**
+set wildmenu
+
 "set filetype to typescript whenever file extension '*.ts' is opened
 autocmd BufNewFile,BufRead *.ts setlocal filetype=typescript
 
