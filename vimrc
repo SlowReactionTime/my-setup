@@ -76,6 +76,9 @@ Plugin 'ycm-core/YouCompleteMe'
 " navigation tree
 Plugin 'preservim/nerdtree'
 
+" gruvbox
+Plugin 'morhetz/gruvbox'
+
 " All of your Plugins must be added before the following line
 call vundle#end()            " required
 filetype plugin indent on    " required
@@ -119,6 +122,11 @@ set autoindent
 " turn on search highlight and turn off when you are no longer searching
 nnoremap <esc><esc> :silent! nohls<cr>
 
+" set colorsscheme to gruvbox [gruvbox] 
+let g:gruvbox_italic=1
+let g:gruvbox_contrast_dark='hard'
+colorscheme gruvbox
+
 " Search down into subfoldes
 set path+=**
 set wildmenu
@@ -148,11 +156,21 @@ noremap <S-P> :r /tmp/vimcopy<CR>
 inoremap kj <esc>
 
 " bind fj to indent whole file (mark p, gg, =G, go back to the mark p)
-nnoremap fj :normal mpgg=G`p<cr> 
+nnoremap fj :normal mpgg=G`p<CR> 
 
-" close all Vim windows except current 
-map <S-k> :only<CR>
+" ![Need to find new key to bind] close all Vim windows except current 
+" map <S-k> :only<CR>
 
 " toggle NERDtree [NERDTree]
 map <S-n> :NERDTreeToggle<CR>
+
+" when gf, open it in a new tab
+nnoremap gf <C-W>gf
+vnoremap gf <C-W>gf
+
+" Vim tab navigation
+map <S-j> :tabprevious<CR>
+map <S-k> :tabnext<CR>
+map <silent> <S-h> :execute 'silent! tabmove ' . (tabpagenr()-2)<CR>
+map <silent> <S-l> :execute 'silent! tabmove ' . (tabpagenr()+1)<CR>
 

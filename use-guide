@@ -36,7 +36,10 @@ Shift+p 'paste out of a temp. file'
 (Navigation)
 kj '<Esc>'
 Ctrl+(hjkl) to 'Vim windows navigation'
-Shift+k 'close all Vim windows except current one'
+Shift+j 'move to previous tab'
+Shift+k 'move to next tab'
+Shift+h 'move tab to the left'
+Shift+l 'move tab to the right'
 
 3. Vim Plugins:
 
@@ -48,3 +51,6 @@ YouCompleteMe: https://github.com/ycm-core/YouCompleteMe
 
 (Navigation)
 NERDTree: https://github.com/preservim/nerdtree
+
+(Appearance)
+gruvbox: https://github.com/morhetz/gruvbox
