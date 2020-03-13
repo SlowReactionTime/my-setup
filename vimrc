@@ -171,6 +171,7 @@ vnoremap gf <C-W>gf
 " Vim tab navigation
 map <S-j> :tabprevious<CR>
 map <S-k> :tabnext<CR>
+map <space> :tabfirst<CR>
 map <silent> <S-h> :execute 'silent! tabmove ' . (tabpagenr()-2)<CR>
 map <silent> <S-l> :execute 'silent! tabmove ' . (tabpagenr()+1)<CR>
 

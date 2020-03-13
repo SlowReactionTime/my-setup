@@ -40,6 +40,7 @@ Shift+j 'move to previous tab'
 Shift+k 'move to next tab'
 Shift+h 'move tab to the left'
 Shift+l 'move tab to the right'
+Shift+<space> 'move to the first tab'
 
 3. Vim Plugins:
 
