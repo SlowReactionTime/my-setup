@@ -98,7 +98,8 @@ filetype plugin indent on    " required
 " open a NERDtree when vim starts up with no file specified
 autocmd StdinReadPre * let s:std_in=1
 autocmd VimEnter * if argc() == 0 && !exists("s:std_in") | NERDTree | endif
-
+let NERDTreeMapJumpLastChild = '/J'
+let NERDTreeMapJumpFirstChild = '/K'
 
 "==========Pure Vim Configuration==========
 " Show line numbers
@@ -153,7 +154,8 @@ noremap <S-D> :'<,'> w! /tmp/vimcopy <bar> :'<,'> d<CR>
 noremap <S-P> :r /tmp/vimcopy<CR>
 
 " Remap kj to escape from insert mode
-inoremap kj <esc>
+"inoremap kj <esc>
+inoremap kj <esc>:only<CR> 
 
 " bind fj to indent whole file (mark p, gg, =G, go back to the mark p)
 nnoremap fj :normal mpgg=G`p<CR> 
