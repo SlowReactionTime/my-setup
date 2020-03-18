@@ -154,8 +154,7 @@ noremap <S-D> :'<,'> w! /tmp/vimcopy <bar> :'<,'> d<CR>
 noremap <S-P> :r /tmp/vimcopy<CR>
 
 " Remap kj to escape from insert mode
-"inoremap kj <esc>
-inoremap kj <esc>:only<CR> 
+inoremap kj <esc>
 
 " bind fj to indent whole file (mark p, gg, =G, go back to the mark p)
 nnoremap fj :normal mpgg=G`p<CR> 
