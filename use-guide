@@ -29,7 +29,7 @@ Default Background Color: #1D001E or #0F000F
 
 (Tool)
 fj 'auto indent the entire file'
-Shift+n 'toggle NERDtree'
+Ctrl+n 'toggle NERDtree'
 Shift+y 'copy into a temp. file'
 Shift+p 'paste out of a temp. file'
 

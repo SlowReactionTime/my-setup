@@ -163,7 +163,7 @@ nnoremap fj :normal mpgg=G`p<CR>
 " map <S-k> :only<CR>
 
 " toggle NERDtree [NERDTree]
-map <S-n> :NERDTreeToggle<CR>
+map <C-n> :NERDTreeToggle<CR>
 
 " when gf, open it in a new tab
 nnoremap gf <C-W>gf
