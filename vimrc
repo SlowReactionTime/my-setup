@@ -159,6 +159,10 @@ inoremap kj <esc>
 " bind fj to indent whole file (mark p, gg, =G, go back to the mark p)
 nnoremap fj :normal mpgg=G`p<CR> 
 
+" toggle highlight all instance of selected 
+let hlstate=0
+nnoremap <c-c> :if (hlstate%2 == 0) \| nohlsearch \| else \| set hlsearch \| endif \| let hlstate=hlstate+1<cr>
+
 " ![Need to find new key to bind] close all Vim windows except current 
 " map <S-k> :only<CR>
 
