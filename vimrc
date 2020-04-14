@@ -125,7 +125,7 @@ nnoremap <esc><esc> :silent! nohls<cr>
 
 " set colorsscheme to gruvbox [gruvbox] 
 let g:gruvbox_italic=1
-let g:gruvbox_contrast_dark='hard'
+let g:gruvbox_contrast_dark='soft'
 colorscheme gruvbox
 
 " Search down into subfoldes
