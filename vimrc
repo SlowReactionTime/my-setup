@@ -140,6 +140,7 @@ autocmd BufNewFile,BufRead *.ts setlocal filetype=typescript
 inoremap { {}
 inoremap ( ()
 inoremap [ []
+inoremap " ""
 
 "==========All Key Bindings==========
 " map key combination for changing Vim windows 
