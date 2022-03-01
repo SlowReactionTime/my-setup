@@ -137,10 +137,12 @@ autocmd BufNewFile,BufRead *.ts setlocal filetype=typescript
 
 "auto complete matching pair 
 "inoremap { {<CR>}<Esc>ko
-inoremap { {}
-inoremap ( ()
-inoremap [ []
-inoremap " ""
+inoremap { {}<Esc>ha
+inoremap ( ()<Esc>ha
+inoremap [ []<Esc>ha
+inoremap " ""<Esc>ha
+inoremap ' ''<Esc>ha
+inoremap ` ``<Esc>ha
 
 "==========All Key Bindings==========
 " map key combination for changing Vim windows 
